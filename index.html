@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свяжитесь с нашей командой</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="feedback-container">
+
+        <section class="feedback-form-block">
+            <h1 class="page-title">Свяжитесь с нашей командой</h1>
+            <p class="page-desc">Опишите вопрос как можно подробнее. Это поможет быстрее подобрать специалиста и
+                подготовить ответ.</p>
+
+            <form class="feedback-form" action="https://postman-echo.com/post" method="POST">
+
+                <div class="form-row row-two-columns">
+                    <div class="input-group">
+                        <label for="user-name">Имя</label>
+                        <input type="text" id="user-name" name="name" placeholder="Иван" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="user-email">E-mail</label>
+                        <input type="email" id="user-email" name="email" placeholder="mail@example.com" required>
+                    </div>
+                </div>
+
+                <div class="form-row row-two-columns">
+                    <div class="input-group">
+                        <label for="feedback-theme">Тема обращения</label>
+                        <div class="select-wrapper">
+                            <select id="feedback-theme" name="theme" required>
+                                <option value="technical">Техническая проблема</option>
+                                <option value="delivery">Доставка и оплата</option>
+                                <option value="return">Возврат товара</option>
+                                <option value="other">Другой вопрос</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="order-number">Номер заказа</label>
+                        <input type="text" id="order-number" name="order_number" placeholder="123456">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="feedback-message">Сообщение</label>
+                        <textarea id="feedback-message" name="message" rows="5" placeholder="Опишите вашу проблему..."
+                            required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="agreement" name="agreement" required>
+                        <span class="custom-checkbox"></span>
+                        <span class="checkbox-label">Я принимаю условия использования сервиса и политику обработки
+                            персональных данных.</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Отправить</button>
+            </form>
+        </section>
+
+        <aside class="feedback-sidebar">
+
+            <div class="sidebar-card">
+                <h2 class="sidebar-title">Контакты поддержки</h2>
+                <div class="contact-item">
+                    <span class="contact-label">E-mail</span>
+                    <a href="mailto:support@orbit.app" class="contact-value">support@orbit.app</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Телефон</span>
+                    <a href="tel:+78005551825" class="contact-value">+7 (800) 555-18-25</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Время работы</span>
+                    <span class="contact-value">09:00 — 21:00 ежедневно</span>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <h2 class="sidebar-title">Что дальше?</h2>
+                <ol class="steps-list">
+                    <li class="step-item">
+                        <span class="step-number">1</span>
+                        <span class="step-text">Заявка попадает в очередь поддержки.</span>
+                    </li>
+                    <li class="step-item">
+                        <span class="step-number">2</span>
+                        <span class="step-text">Мы анализируем обращение и уточняем детали при необходимости.</span>
+                    </li>
+                    <li class="step-item">
+                        <span class="step-number">3</span>
+                        <span class="step-text">Ответ приходит на указанную электронную почту.</span>
+                    </li>
+                </ol>
+            </div>
+        </aside>
+    </main>
+
+</body>
+
+</html>
